@@ -128,6 +128,8 @@ settings.py (Important - Please note 'django.contrib.sites' is required as INSTA
 
 urls.py::
 
+    from django.conf.urls import include, url
+
     urlpatterns = [
         ...
         url(r'^accounts/', include('allauth.urls')),
